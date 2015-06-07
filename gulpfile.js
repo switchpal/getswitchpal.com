@@ -4,9 +4,9 @@ var ghPages = require('gulp-gh-pages');
 
 gulp.task('assets', function () {
   return gulp.src([
-    'css/**/*.*',
-    'js/**/*.*',
-    'img/**/*.*'
+    'styles/**/*.css',
+    'scripts/**/*.*',
+    'images/**/*.*'
   ], {base: './'})
     .pipe(gulp.dest('dist'));
 });
