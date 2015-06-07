@@ -55,5 +55,5 @@ gulp.task('cname', function () {
 
 gulp.task('deploy', ['build', 'cname'], function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({remoteUrl: 'git@github.com:cllu/getswitchpal.com.git'}));
+    .pipe(ghPages({remoteUrl: 'git@github.com:cllu/getcoolerpal.com.git'}));
 });
