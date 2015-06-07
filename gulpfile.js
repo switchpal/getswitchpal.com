@@ -1,6 +1,13 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var useref = require('gulp-useref');
 var ghPages = require('gulp-gh-pages');
+
+gulp.task('sass', function () {
+  gulp.src('styles/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('styles'));
+});
 
 gulp.task('assets', function () {
   return gulp.src([
@@ -27,6 +34,18 @@ gulp.task('html', function () {
 });
 
 gulp.task('build', ['assets', 'fonts', 'html'], function () {
+});
+
+gulp.task('dev', ['build'], function () {
+  var express = require('express');
+  var server = express();
+  server.use(express.static('./dist'));
+  server.listen(2345);
+  console.log('Server is up on http://localhost:2345');
+
+  gulp.watch('styles/*.scss', ['sass']);
+  gulp.watch(['styles/*.css', 'scripts/*.*', 'index.html'], ['build']);
+
 });
 
 gulp.task('cname', function () {

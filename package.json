@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/cllu/getswitchpal.com",
   "devDependencies": {
+    "express": "^4.12.4",
     "gulp": "^3.8.11",
     "gulp-gh-pages": "^0.5.1",
+    "gulp-sass": "^2.0.1",
     "gulp-useref": "^1.1.2"
-  }
+  },
+  "dependencies": {}
 }
