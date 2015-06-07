@@ -1,0 +1,24 @@
+{
+  "name": "getswitchpal.com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cllu/getswitchpal.com.git"
+  },
+  "author": "Chunliang Lyu <hi@chunlianglyu.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cllu/getswitchpal.com/issues"
+  },
+  "homepage": "https://github.com/cllu/getswitchpal.com",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-gh-pages": "^0.5.1",
+    "gulp-useref": "^1.1.2"
+  }
+}
