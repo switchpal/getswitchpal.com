@@ -9,7 +9,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('styles'));
 });
 
-gulp.task('assets', function () {
+gulp.task('assets', ['sass'], function () {
   return gulp.src([
     'styles/**/*.css',
     'scripts/**/*.*',
@@ -26,7 +26,7 @@ gulp.task('fonts', function () {
 gulp.task('html', function () {
   var assets = useref.assets();
 
-  return gulp.src('index.html')
+  return gulp.src(['_site/**/*.html', '!_site/bower_components/**/*.html'])
     .pipe(assets)
     .pipe(assets.restore())
     .pipe(useref())
