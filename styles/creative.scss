@@ -327,12 +327,12 @@ img::-moz-selection {
 // page layout styling
 /* Customize container */
 @media (min-width: 668px) {
-  .container {
+  .page-container {
     max-width: 630px;
   }
 }
 
-.container {
+.page-container {
   h2 {
     text-align: center;
   }
