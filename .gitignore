@@ -9,3 +9,4 @@ dist
 .publish
 
 .sass-cache
+_site
