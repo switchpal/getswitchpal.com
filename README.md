@@ -1,4 +1,4 @@
-# SwitchPal Official Website
+# SwitchPal Website
 
 To start development:
 

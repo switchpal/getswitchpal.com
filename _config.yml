@@ -1,9 +1,9 @@
 # Site settings
-title: CoolerPal
-email: hi@getcoolerpal.com
+title: SwitchPal
+email: hi@getswitchpal.com
 description: Smartify your existing Devices
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://getcoolerpal.com" # the base hostname & protocol for your site
+url: "https://getswitchpal.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
